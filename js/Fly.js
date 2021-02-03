@@ -10,11 +10,6 @@ class Fly{
         this.sling = Matter.Constraint.create(options);
         Matter.World.add(world, this.sling);
     }
-
-    fly(){
-        this.sling.bodyA = null;
-    }
-
     attach(bodyA){
         this.sling.bodyA=bodyA;
     }
